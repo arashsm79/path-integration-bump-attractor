@@ -2,9 +2,11 @@
 Arash Sal Moslehian, Ludwig Tiston
 2024-05-25
 
+> You can find the [code](https://github.com/arashsm79/path-integration-bump-attractor/blob/main/pyreport.ipynb) and the [report](https://github.com/arashsm79/path-integration-bump-attractor/blob/main/pyreport.pdf) in the file tree of this repository. The PDF version of the report is properly rendered. Each exercise begins with a question and follows by the answer with the related figure. 
+
 When ants leave their nest in search of food, they often follow complex paths during their scavengings. Research has demonstrated that some ant species possess the ability to navigate back to their nest in a direct line, even after wandering extensively and without relying on landmark cues. This behavior implies that ants have an internal spatial representation or 'memory' that is continuously updated based on their movements. Here, our goal is to create a circuit that can integrate an ant's movements in two dimensions to estimate its position at each time step. To achieve this, we will leverage the stability of bump attractors using Poisson neurons. We start with simulating simple Poisson neurons and managing bump attractors. Following this, we transform the bump attractor into a network capable of integration. Finally, we combine all the components to simulate and decode an agent's trajectory.
 
-> The question part of the exercises were written by team of [LCN](https://www.epfl.ch/labs/lcn/) at EPFL as a part of the computational neuroscience course.
+> The question part of the exercises were written by the team of [LCN](https://www.epfl.ch/labs/lcn/) at EPFL as a part of the computational neuroscience course.
 
 # Poisson neurons
 Please check out sections 7.2 and 15.3 of the book [Neuronal Dynamics](https://neuronaldynamics.epfl.ch/online/index.html) for more information.
