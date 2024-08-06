@@ -79,6 +79,7 @@ The initial conditions are sampled from $h_i(0) ~ Uniform (0, 1)$ mV.
 firing rate of all the neurons for different values of $J$. For
 $J > 4.7$ we can consistently get a bump.
 
+**Figure 3**
 <img src="pyreport_files/figure-commonmark/fig-ex1-1-output-1.png"
 id="fig-ex1-1" />
 
@@ -89,6 +90,7 @@ activity. How stable is the location of the bump?
 the location of $\theta_{bump}$ for different values of $dt$. As we
 increase the time scale we see the bump drift and move around a bit.
 
+**Figure 4**
 <div class="cell-output cell-output-display">
 
 <img src="pyreport_files/figure-commonmark/fig-ex1-2-output-1.png"
@@ -130,6 +132,7 @@ means that neurons that are spatially close are more strongly connected.
 Therefore, an increase in activity at the center of the input will
 spread to neighboring neurons due to the recurrent connections.
 
+**Figure 5**
 ![](pyreport_files/figure-commonmark/fig-ex1-4-output-1.png)
 
 **Ex.1.5**: In the case without external input, what would happen to the bump if the connectivity was instead
@@ -143,6 +146,7 @@ frequency of rotation increased. This is as expected, as the neurons are
 now stimulated at all times as if there was a bump slightly shifted from
 it, so it tried to “chase the shadow” in each timestep.
 
+**Figure 6**
 <div class="cell-output cell-output-display">
 
 <img src="pyreport_files/figure-commonmark/fig-ex1-5-output-1.png"
@@ -194,6 +198,7 @@ bump is stuck at the edge and does not wrap around like in
 
       0%|                                                                                                                        | 0/4999 [00:00<?, ?it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████| 4999/4999 [00:53<00:00, 92.73it/s]
 
+**Figure 7**
 ![](pyreport_files/figure-commonmark/fig-ex1-6-output-2.png)
 
 # Integration
@@ -244,6 +249,7 @@ stable is this configuration?
 the location of the bump for the left and right population with randomly
 initialized potentials and $\theta = 10^{\circ}$ and $J = 3$ pC.
 
+**Figure 8**
 ![](pyreport_files/figure-commonmark/fig-ex2-2-output-1.png)
 
 **Ex.2.3**:  Find a way to initialise the potential hi(t = 0) such that the mean location of the two bumps is at
@@ -255,6 +261,7 @@ Their mean has been initialised at $\pi$ This is done by initialising
 the two membrane potentials with noisy square-waves slightly offset from
 $\pi$. A slight drift can be seen over time.
 
+**Figure 9**
 ![](pyreport_files/figure-commonmark/fig-ex2-3-output-1.png)
 
 **Ex.2.4**: Take I0 as varying from -1.5 to 1.5 nA in 51 steps. Simulate the dynamics and plot the final
@@ -266,6 +273,7 @@ the final location $\theta_{bump} \text{mean}$ for different values of
 $I_0$. An upper limit on $I_0$ that keeps the bump in a linear regime
 would be $I_0 \leq 0.47$ nA.
 
+**Figure 10**
 ![](pyreport_files/figure-commonmark/fig-ex2-4-output-1.png)
 
 **Ex.2.5**:  Explain how this system of coupled bump attractors can be seen as a system for integration of the
@@ -311,6 +319,7 @@ integrating and representing head direction. Any significant mismatches
 could suggest that the turning speed in the trajectory generation was
 too fast, causing the neural network to lag.
 
+**Figure 11**
 ![](pyreport_files/figure-commonmark/fig-ex3-2-output-1.png)
 
 **Ex.3.3**:  Find a value of Jhead such that the total input coming from the head direction cells to the two
@@ -323,6 +332,7 @@ close to $0.9$ pC give rise to an input around $0.47$ nA which as we saw
 in <a href="#fig-ex2-4" class="quarto-xref">Figure 10</a> puts the
 system in a linear regime.
 
+**Figure 12**
 ![](pyreport_files/figure-commonmark/fig-ex3-3-output-1.png)
 
 **Ex.3.4**:  Write down the equations for the input that is received by each of the five populations.
@@ -368,6 +378,7 @@ step size can ensure that the head direction changes more smoothly and
 slowly, allowing the neural network to better track these changes and
 integrate the trajectory more accurately.
 
+**Figure 13**
 <div class="cell-output cell-output-display">
 
 <img src="pyreport_files/figure-commonmark/fig-ex3-5-output-1.png"
@@ -415,6 +426,7 @@ the performance of the network with $N = 2000$ number of neurons and for
 $T = 4000$ miliseconds. The estimated trajectory is now more accurate
 and smoother.
 
+**Figure 14**
 <div class="cell-output cell-output-display">
 
 <img src="pyreport_files/figure-commonmark/fig-ex3-7-output-1.png"
