@@ -4,6 +4,8 @@ Arash Sal Moslehian, Ludwig Tiston
 
 When ants leave their nest in search of food, they often follow complex paths during their scavengings. Research has demonstrated that some ant species possess the ability to navigate back to their nest in a direct line, even after wandering extensively and without relying on landmark cues. This behavior implies that ants have an internal spatial representation or 'memory' that is continuously updated based on their movements. Here, our goal is to create a circuit that can integrate an ant's movements in two dimensions to estimate its position at each time step. To achieve this, we will leverage the stability of bump attractors using Poisson neurons. We start with simulating simple Poisson neurons and managing bump attractors. Following this, we transform the bump attractor into a network capable of integration. Finally, we combine all the components to simulate and decode an agent's trajectory.
 
+> The question part of the exercises were written by team of [LCN](https://www.epfl.ch/labs/lcn/) at EPFL as a part of the computational neuroscience course.
+
 # Poisson neurons
 Please check out sections 7.2 and 15.3 of the book [Neuronal Dynamics](https://neuronaldynamics.epfl.ch/online/index.html) for more information.
 In this project, we will be using Poisson neurons to simulate the neural activity. Their simplicity makes them a great candidate for efficiently simulating large scale population dynamics at the cost of some biological inaccuracies.
